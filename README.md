@@ -17,7 +17,7 @@ Projet de développement SAE fait en collaboration avec _ , _ ,_ , _ et whoselev
 - Une fois que c'est fait, faite fetch origin.
 
 ### Les fichier
-- A chaque fois que vous voulez travailler sur les fichier n'oublier pas de faire fetch ou pull
+- A chaque fois que vous voulez travailler sur les fichier n'oublier pas de faire fetch puis pull
 - A chaque modification n'oubliez pas de commit to main puis de push vos modification pour être sur que tous le monde y ont accès
 
 
