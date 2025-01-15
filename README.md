@@ -1,5 +1,5 @@
 # -SAE-Recueil-Besoin
-Projet de développement SAE fait en collaboration avec RemRem04, A-thepuma, _, _ et whoselevenn
+Projet de développement SAE fait en collaboration avec RemRem04, A-thepuma, nass-azz, Noarbre et whoselevenn
 
 ## Aide aux dévellopeur pour GitHub
 ### Application
