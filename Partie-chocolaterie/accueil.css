@@ -3,9 +3,11 @@ body {
     padding: 0;
     color: #201C1C;
     font-family: "Roboto", sans-serif;
-    width: 75%;
-    margin: 0 auto;
-    box-sizing: border-box;
+    background-color: #faf5f5;
+}
+
+main{
+    background-color: #faf5f5;
 }
 
 a {
