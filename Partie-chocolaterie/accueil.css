@@ -67,6 +67,24 @@ a:hover{
     color: #54BCBF;
 }
 
+.intro {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-intro {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
 .intro img {
     width: 100%;
 }
