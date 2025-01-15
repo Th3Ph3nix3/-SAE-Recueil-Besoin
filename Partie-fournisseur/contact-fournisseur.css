@@ -20,7 +20,7 @@ a {
 }
 
 footer {
-    background-color: #f59fca;
+    background-color: #54BCBF;
     padding: 40px 0;
     width: 100%;
     text-align: center;
@@ -54,5 +54,5 @@ footer {
 }
 
 a:hover{
-    color: #54BCBF;
+    color: #f59fca;
 }
