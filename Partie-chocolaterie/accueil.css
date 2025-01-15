@@ -12,6 +12,10 @@ a {
     color: #201C1C;
 }
 
+main{
+    background-color: #faf5f5;
+}
+
 .navbar {
     background-color: #f59fca;
     padding: 40px 0;

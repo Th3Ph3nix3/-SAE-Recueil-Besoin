@@ -1,11 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #201C1C;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
 a {
     color: #201C1C;
+}
+
+main{
+    background-color: #faf5f5;
 }
 
 .navbar {
     background-color: #54BCBF;
     padding: 40px 0;
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -56,3 +69,4 @@ footer {
 a:hover{
     color: #f59fca;
 }
+
