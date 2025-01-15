@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: #f59fca;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+
+    
+}
+
+.nav a {
+
+    
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 20px;
+    flex: 0.1; /*a voir , repartirtion équitable */
+    
+}
+
+.nav a:hover{
+
+    color: #54bcbf;
+    text-decoration: underline;
+}
+
+.nav a.active {
+
+    color: #54bcbf;
+    text-decoration: underline;
+    
+}
+
+.logo {
+
+    display: inline-block;
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+    
+}
+
+.logo img {
+
+    width: 100%;
+    height: auto;
+}
+
+.contenu_principale{
+
+    padding: 20px;
+    text-align: center;
+}
+
+.grilles_produits{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(300px, 1fr));
+    gap: 20px;
+}
+
+.produit {
+
+    background: #d9d9d9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: left;
+
+}
+
+.produit img {
+
+    max-width: 100%;
+    border-radius: 8px;
+   
+}
+
+.produit h2 {
+
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.Btt_ajouter {
+
+    background: #54bcbf;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.prix {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
