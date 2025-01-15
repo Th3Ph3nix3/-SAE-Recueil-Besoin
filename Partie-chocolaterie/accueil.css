@@ -6,10 +6,7 @@ body {
     width: 75%;
     margin: 0 auto;
     box-sizing: border-box;
-}
-
-a {
-    color: #201C1C;
+    background-color: #faf5f5;
 }
 
 main{
