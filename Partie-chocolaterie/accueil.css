@@ -6,10 +6,11 @@ body {
     width: 75%;
     margin: 0 auto;
     box-sizing: border-box;
+    background-color: #faf5f5;
 }
 
-a {
-    color: #201C1C;
+main{
+    background-color: #faf5f5;
 }
 
 .navbar {
