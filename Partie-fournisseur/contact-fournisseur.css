@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #201C1C;
+    background-color: #faf5f5;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+a {
+    color: #201C1C;
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #48c2c2;
+    padding: 20px 20px;
+}
+
+.navbar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 32px;
+    color: #201C1C;
+    padding: 5px 10px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar a:nth-child(4) {
+    color: #fcb6d1;
+    position: relative;
+}
+
+.navbar a:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #fcb6d1;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar a:nth-child(4):hover::after {
+    transform: scaleX(0.82);
+}
+
+
+footer {
+    background-color: #54BCBF;
+    padding: 40px 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    margin-left: 50%;
+    text-decoration: none;
+    font-size: 32px;
+    color: #201C1C;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-right: 5%;
+}
+
+a:hover{
+    color: #f59fca;
+}
+
+.footer-socials a {
+    text-decoration: none;
+    color: #201C1C;
+}
+
+h1 {
+    font-size: 32px;
+    color: #201C1C;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    margin-top: 3%;
+}
+
+.Emplacement-fournisseurs {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    padding: 20px;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: -1%;
+}
+
+.Emplacement-fournisseurs img {
+    width: 25%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.adresse h2 {
+    font-size: 26px;
+    color: #201C1C;
+    margin-bottom: 10px;
+}
+
+.adresse p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #201C1C;
+}
+
+.Emplacement-acheteurs {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    padding: 20px;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 2.5%;
+}
+
+.Emplacement-acheteurs img {
+    width: 25%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.button {
+    background-color: #f59fca;
+    color: #201C1C;
+    font-size: 26px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 12%;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #ee6c99;
+}
