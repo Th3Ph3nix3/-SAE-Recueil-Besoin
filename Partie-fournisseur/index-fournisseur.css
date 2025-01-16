@@ -1,124 +1,140 @@
-/* Style global */
-html, body {
-    height: 100%; /* Assure que la hauteur de la page remplit la fenêtre */
+body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #FAF5F5; /* Couleur de l'arrière-plan */
-    color: #201C1C; /* Couleur du texte */
-    line-height: 1.6;
+    color: #201C1C;
+    background-color: #faf5f5;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-/* Wrapper global pour un footer collant */
-.wrapper {
-    min-height: 100%; /* Prend au moins toute la hauteur */
+a {
+    color: #201C1C;
+}
+
+/* Style de la barre de navigation */
+.navbar {
     display: flex;
-    flex-direction: column; /* Organisation en colonnes */
+    align-items: center;
+    justify-content: space-around;
+    background-color: #48c2c2;
+    padding: 20px 20px;
 }
 
-/* Header */
-header {
-    background-color: #54BCBF; /* Couleur du header */
-    padding: 10px 20px;
-    display: flex;
-    align-items: center; /* Aligne verticalement le logo et la navigation */
-    justify-content: flex-start; /* Aligne les éléments à gauche */
-    gap: 20px; /* Espacement entre le logo et la navigation */
-}
-
-/* Logo dans le header */
-.logo {
-    width: 50px; /* Largeur du logo */
+.navbar img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
-/* Navigation dans le header */
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 100px; /* Espacement entre les éléments de la navigation */
-    margin: 0;
-    padding: 100;
-}
-
-header nav ul li a {
+.navbar a {
     text-decoration: none;
-    color: #201C1C; /* Couleur du texte des liens */
-    font-weight: bold;
-    transition: color 0.3s, border-bottom 0.3s;
+    font-size: 32px;
+    color: #201C1C;
+    padding: 5px 10px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
-/* Lien spécifique pour "Accueil" */
-header nav ul li:first-child a {
-    color: #F59FCA; /* Couleur spécifique pour "Accueil" */
-    border-bottom: 2px solid #F59FCA; /* Petit trait en dessous */
+.navbar a:nth-child(2) {
+    color: #fcb6d1;
+    position: relative;
 }
 
-header nav ul li a:hover {
-    color: #F59FCA;
-    border-bottom: 2px solid #F59FCA;
+.navbar a:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #fcb6d1;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 
-/* Contenu principal */
+.navbar a:nth-child(2):hover::after {
+    transform: scaleX(0.82);
+}
+
+
 main {
-    flex: 1; /* Permet de pousser le footer en bas si le contenu est insuffisant */
-    padding: 20px;
+    margin-bottom: 80px;
+}
+
+footer {
+    background-color: #54BCBF;
+    padding: 40px 0;
+    width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    margin-left: 50%;
+    text-decoration: none;
+    font-size: 32px;
+    color: #201C1C;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-right: 5%;
+}
+
+a:hover{
+    color: #f59fca;
+}
+
+.footer-socials a {
+    text-decoration: none;
+    color: #201C1C;
+}
+
+h1 {
+    font-size: 32px;
+    color: #201C1C;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    margin-top: 3%;
+}
+
+
+main {
+    padding: 20px; 
+    text-align: center; 
+    max-width: 800px; 
+    margin: 0 auto;  
+    line-height: 1.8; 
+    color: #201C1C; 
+    font-size: 1.1rem; 
 }
 
 main h1 {
-    font-size: 2rem;
-    margin-bottom: 20px; /* Espace sous le titre */
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+    color: #54BCBF; 
 }
 
 main p {
-    font-size: 1.2rem;
-    margin-top: 10px; /* Espace au-dessus du paragraphe */
-    line-height: 1.6; /* Espacement des lignes pour la lisibilité */
+    text-align: justify; 
+    margin-top: 10px; 
+    padding: 10px; 
+    background-color: #F3F3F3; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* Footer */
-footer {
-    background-color: #54BCBF; /* Couleur du footer */
-    padding: 10px 20px;
-    display: flex;
-    align-items: center; /* Aligne les éléments verticalement */
-    justify-content: space-between; /* Navigation à gauche, réseaux sociaux à droite */
-}
 
-/* Navigation dans le footer */
-footer nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px; /* Espacement entre les éléments de la navigation */
-    margin: 0;
-    padding: 0;
-}
 
-footer nav ul li a {
-    text-decoration: none;
-    color: #201C1C;
-    font-weight: bold;
-    transition: color 0.3s;
-}
 
-/* Réseaux sociaux dans le footer */
-footer .social-media {
-    display: flex;
-    gap: 15px; /* Espacement entre les icônes des réseaux sociaux */
-}
-
-footer .social-media a {
-    display: inline-block;
-    transition: transform 0.3s; /* Ajoute un effet visuel au survol */
-}
-
-footer .social-media a:hover {
-    transform: scale(1.1); /* Agrandit légèrement l'icône au survol */
-}
-
-footer .social-media img {
-    width: 30px; /* Largeur des icônes */
-    height: auto; /* Hauteur proportionnelle */
-    border-radius: 50%; /* Ajoute un effet arrondi (facultatif) */
-}
