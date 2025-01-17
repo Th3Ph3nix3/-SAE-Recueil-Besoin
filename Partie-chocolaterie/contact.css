@@ -56,6 +56,12 @@ a {
     transform: scaleX(0.82);
 }
 
+.nav a.active {
+
+    color: #54bcbf;
+    text-decoration: underline;
+    
+}
 
 footer {
     background-color: #f59fca;

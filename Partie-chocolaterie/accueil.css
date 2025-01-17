@@ -2,9 +2,12 @@ body {
     margin: 0;
     padding: 0;
     color: #201C1C;
-    font-family: "Roboto", sans-serif;
     background-color: #faf5f5;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
+
 
 main{
     background-color: #faf5f5;
@@ -29,12 +32,12 @@ a {
 }
 
 .navbar a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 32px;
     color: #201C1C;
+    padding: 5px 10px;
+    transition: color 0.3s;
+    text-underline-offset:  4px;
 }
 
 .navbar a:nth-child(4)::after {
@@ -51,6 +54,20 @@ a {
 
 .navbar a:nth-child(4):hover::after {
     transform: scaleX(0.82);
+}
+
+.navbar a:hover{
+
+    color: #54bcbf;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.navbar a.active {
+
+    color: #54bcbf;
+    text-decoration: underline;
+    
 }
 
 .footer-links {
