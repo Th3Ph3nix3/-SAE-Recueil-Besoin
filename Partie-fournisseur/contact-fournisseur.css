@@ -113,6 +113,9 @@ h1 {
     max-width: 90%;
     margin: auto;
     margin-bottom: -1%;
+    background-color: #F3F3F3; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .Emplacement-fournisseurs img {
@@ -142,6 +145,9 @@ h1 {
     max-width: 90%;
     margin: auto;
     margin-bottom: 2.5%;
+    background-color: #F3F3F3; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .Emplacement-acheteurs img {

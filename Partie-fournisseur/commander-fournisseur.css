@@ -116,7 +116,10 @@ h1 {
     padding: 20px;
     max-width: 90%;
     margin: auto;
-    margin-bottom: -1%;
+    margin-bottom: 20px;
+    background-color: #F3F3F3; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .Marchandise img {
