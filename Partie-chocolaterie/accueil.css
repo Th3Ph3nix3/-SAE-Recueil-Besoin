@@ -17,6 +17,7 @@ a {
     color: #201C1C;
 }
 
+/* Style de la barre de navigation */
 .navbar {
     display: flex;
     align-items: center;
@@ -36,11 +37,15 @@ a {
     font-size: 32px;
     color: #201C1C;
     padding: 5px 10px;
-    transition: color 0.3s;
-    text-underline-offset:  4px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
-.navbar a:nth-child(4)::after {
+.navbar a:nth-child(2) {
+    color: #48c2c2;
+    position: relative;
+}
+
+.navbar a:nth-child(2)::after {
     content: "";
     position: absolute;
     left: 0;
@@ -52,18 +57,11 @@ a {
     transition: transform 0.3s ease;
 }
 
-.navbar a:nth-child(4):hover::after {
+.navbar a:nth-child(2):hover::after {
     transform: scaleX(0.82);
 }
 
-.navbar a:hover{
-
-    color: #54bcbf;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-}
-
-.navbar a.active {
+.nav a.active {
 
     color: #54bcbf;
     text-decoration: underline;

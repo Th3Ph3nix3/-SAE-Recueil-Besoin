@@ -1,42 +1,59 @@
-* {
+body {
     margin: 0;
     padding: 0;
+    color: #201C1C;
+    background-color: #faf5f5;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
-body{
-
-    font-family: Arial, Helvetica, sans-serif;
+a {
+    color: #201C1C;
 }
-.nav {
-    background-color: #f59fca;    
+
+/* Style de la barre de navigation */
+.navbar {
     display: flex;
     align-items: center;
-    padding: 20px 20px;    
     justify-content: space-around;
-
-    
+    background-color: #f59fca;
+    padding: 20px 20px;
 }
 
-.nav a {
+.navbar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
 
-    
-    color: black;
-    text-align: left;
-    margin: 0 20px;
-    font-size: 32px;
+.navbar a {
     text-decoration: none;
-    flex: 0;
-    transition: color 0.3s;
-    text-underline-offset:  4px;
-    
+    font-size: 32px;
+    color: #201C1C;
+    padding: 5px 10px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
-.nav a:hover{
+.navbar a:nth-child(3) {
+    color: #48c2c2;
+    position: relative;
+}
 
-    color: #54bcbf;
-    text-decoration: underline;
-    text-underline-offset: 5px;
+.navbar a:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #48c2c2;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar a:nth-child(3):hover::after {
+    transform: scaleX(0.82);
 }
 
 .nav a.active {
@@ -46,34 +63,55 @@ body{
     
 }
 
-.logo {
-
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 50px;
-    margin-left: 1%;
-}
-
-.logo img {
-
+footer {
+    background-color: #f59fca;
+    padding: 40px 0;
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    margin-left: 50%;
+    text-decoration: none;
+    font-size: 32px;
+    color: #201C1C;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-right: 5%;
+}
+
+a:hover{
+    color: #48c2c2;
+}
+
+.footer-socials a {
+    text-decoration: none;
+    color: #201C1C;
+}
+
+
 
 .contenu_principale{
 
     padding: 40px;
     text-align: left;
-    
 }
 
 .grilles_produits{
-
-    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 100px;    
@@ -83,7 +121,6 @@ body{
 }
 
 .produit {
-
     background: #d9d9d9;
     display: flex;
     border-radius: 8px;
@@ -99,13 +136,11 @@ body{
 }
 
 .produit:hover {
-
     transform: scale(1.05);
     box-shadow: 0 6px 10px rgba(0,0,0,0.2);
 }
 
 .produit img {
-
     width: 100%;
     border-radius: 8px 8px 0 0;
     height: 200px;    
@@ -114,7 +149,6 @@ body{
 }
 
 .produit h2 {
-
     font-size: 16px;
     margin: 10px 0 0 10px ;
     text-align: left;
@@ -129,7 +163,6 @@ body{
 }
 
 .Btt_ajouter {
-
     background: #54bcbf;
     color: black;
     border: none;
@@ -140,118 +173,27 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .Btt_ajouter:hover{
-
     background:  #4aa6a7;
 }
 
 .bouton_prix{
-
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10px 0;
     gap: 10px;
 }
+
 .prix {
     font-size: 16px;
     font-weight: bold;        
-    text-align: right;
-        
+    text-align: right;  
 }
 
 .unité {
-    
-    
     font-size: 12px;
     text-align: right;
-    
-}
-
-footer {
-
-    background: #f59fca;
-    padding: 40px 0;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    
-
-}
-
-footer nav {
-
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    margin-left: 5%;
-
-}
-
-footer nav a {
-
-    color: black;
-    text-decoration: none;
-    text-underline-offset:  4px;
-    font-size: 32px;
-    
-}
-
-.reseaux_sociaux {
-
-    display: flex;    
-    gap: 30px; 
-    margin-right: 5%; 
-   
-}
-
-.reseaux_sociaux img {
-
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-    transition: transform 0.3s;
-    
-    
-    
-}
-footer nav a:hover{
-
-    color: #54bcbf;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-}
-
-footer .reseaux_sociaux {
-
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    
-    
-}
-
-footer .reseaux_sociaux img {
-
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: transform 0.3s;
-    margin-right: 5%;
-}
-
-footer .reseaux_sociaux img:hover {
-
-    transform: scale(1.1);
-}
-
-@media (max-width: 768px) {
-    .grilles_produits {
-        grid-template-columns: 1fr; /* Une seule colonne */
-    }
 }
