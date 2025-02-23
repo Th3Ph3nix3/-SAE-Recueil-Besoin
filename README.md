@@ -1,9 +1,10 @@
-# -SAE-Recueil-Besoin
-Projet de développement SAE fait en collaboration avec RemRem04, A-thepuma, nass-azz, Noarbre et whoselevenn
+#-SAE-Recueil-Besoin
+SAE development project done in collaboration with RemRem04, A-thepuma, nass-azz, Noarbre and whoselevenn
 
-Lien vers le site web : https://th3ph3nix3.github.io/-SAE-Recueil-Besoin/Partie-chocolaterie/accueil.html
+## Description
+The aim of this study project was simply to make a showcase website based on the needs of a group playing a chocolate factory while they made our site (the supplier's) before we linked the two sites.
 
-## Aide aux dévellopeur pour GitHub
+## GitHub developer support - FR
 ### Application
 - Installer l'application GitHub
 - Connecter votre compte
@@ -21,6 +22,3 @@ Lien vers le site web : https://th3ph3nix3.github.io/-SAE-Recueil-Besoin/Partie-
 ### Les fichier
 - A chaque fois que vous voulez travailler sur les fichier n'oublier pas de faire fetch puis pull
 - A chaque modification n'oubliez pas de commit to main puis de push vos modification pour être sur que tous le monde y ont accès
-
-
-## Merci d'avoir lu
